@@ -52,15 +52,17 @@ button:hover {
 
 .about-container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
+    min-height: calc(100vh - 300px);
+    display: flex;           
+    flex-direction: column;
+    justify-content: center; 
 }
-
 .about-container h2 {
     font-size: 28px;
     color: #2d2d2d;
@@ -71,7 +73,7 @@ button:hover {
     color: #555;
     line-height: 1.6;
 }
- 
+
 
 .header {
     background: #e1d3f8; 
@@ -107,7 +109,7 @@ button:hover {
     padding: 20px;
     justify-content: center;
     background: #eef5f2;
-    align-items: start; 
+    align-items: start;
 }
 
 
@@ -125,7 +127,6 @@ button:hover {
     max-width: 250px;
     position: relative;
 }
-
 
 .product-item img {
     width: 100%;
@@ -147,7 +148,6 @@ button:hover {
     flex-direction: column;
 }
 
-
 .product-info h3 {
     font-size: 14px;
     font-weight: bold;
@@ -157,7 +157,6 @@ button:hover {
     text-overflow: ellipsis;
 }
 
-
 .product-price {
     font-size: 16px;
     font-weight: bold;
@@ -165,7 +164,6 @@ button:hover {
     display: block;
     margin-bottom: 5px;
 }
-
 
 .view-details {
     color: #5a3d8a;
@@ -180,7 +178,6 @@ button:hover {
 .view-details:hover {
     color: #3a2561;
 }
-
 
 .add-to-cart-btn {
     position: absolute;
@@ -205,8 +202,8 @@ button:hover {
 
 .product-page {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 40px;
     padding: 40px;
     max-width: 1000px;
@@ -217,7 +214,6 @@ button:hover {
     flex: 1;
 }
 
-
 .product-image img {
     width: 350px;
     height: auto;
@@ -226,28 +222,31 @@ button:hover {
     padding: 10px;
 }
 
-
-.product-info {
+.product-page .product-info {
     max-width: 400px;
+    text-align: left;
 }
 
-.product-info h2 {
+.product-page .product-info h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .category {
     font-size: 14px;
     color: #777;
+    text-align: left;
 }
 
-.price {
+.product-page .price {
     font-size: 22px;
     font-weight: bold;
-    padding: 8px 14px;
+    padding: 8px 0;
     border-radius: 12px;
-    display: inline-block;
+    display: block;
     margin: 10px 0;
+    text-align: left;
 }
 
 
@@ -280,7 +279,6 @@ button:hover {
     text-align: center;
 }
 
-
 .add-to-cart {
     width: 100%;
     border: 1px solid rgb(210, 203, 203);
@@ -298,18 +296,19 @@ button:hover {
     background: #858181;
 }
 
-
 .description {
     font-size: 14px;
     color: #555;
     margin-top: 10px;
     line-height: 1.5;
+    text-align: left;
 }
 
 .product-id {
     font-size: 12px;
     color: #888;
     margin-top: 5px;
+    text-align: left;
 }
 
 
@@ -322,10 +321,6 @@ button:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1;
-}
-
-.cart-item:last-child {
-    border-bottom: none;
 }
 
 .cart-items {
@@ -353,6 +348,10 @@ button:hover {
     transform: translateX(-50%);
     height: 1px;
     background: #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
 }
 
 .cart-item:last-child::after {
@@ -400,8 +399,8 @@ button:hover {
 
 .complete-purchase {
     display: block;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%; 
+    margin: 15px auto; 
     background: #7ab89d;
     color: white;
     font-size: 16px;
@@ -483,12 +482,11 @@ button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-
 .footer {
     background-color: #e1d3f8;
-    color:#551CB0;
+    color: black;
     padding: 40px 0 20px 0;
-    margin-top: auto;
+    margin-top: auto; 
 }
 
 .footer-content {
@@ -508,7 +506,7 @@ button:hover {
 
 .footer-section p {
     margin: 5px 0;
-    color: #551CB0;
+    color: black;
 }
 
 .social-links {
@@ -518,7 +516,7 @@ button:hover {
 }
 
 .social-links a {
-    color: #551CB0;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -535,7 +533,7 @@ button:hover {
 }
 
 .footer-bottom p {
-    color: #551CB0;
+    color: black;
     font-size: 14px;
 }
 
@@ -546,7 +544,7 @@ button:hover {
 }
 
 .footer-links a {
-    color: #551CB0;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
 }
