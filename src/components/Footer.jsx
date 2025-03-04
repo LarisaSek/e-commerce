@@ -7,22 +7,22 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h4>Meny</h4>
+          <h4>Menu</h4>
           <div className="footer-links">
-            <Link to="/about">Om oss</Link>
-            <Link to="/">Produkter</Link>
-            <Link to="/cart">Kundvagn</Link>
+            <Link to="/about">About</Link>
+            <Link to="/">Products</Link>
+            <Link to="/cart">Cart</Link>
           </div>
         </div>
         
         <div className="footer-section">
-          <h4>Kontakt</h4>
+          <h4>Contact</h4>
           <p>Email: info@butik.se</p>
-          <p>Tel: 08-123 45 67</p>
+          <p>Phone nr: 08-123 45 67</p>
         </div>
 
         <div className="footer-section">
-          <h4>Följ oss</h4>
+          <h4>Follow us</h4>
           <div className="social-links">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
