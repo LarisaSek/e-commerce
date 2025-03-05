@@ -9,7 +9,7 @@ const OrderPage = () => {
     const { clearCart } = useContext(CartContext);
     return (
         <div className="order-confirmation">
-            <h2>Order Confirmed! :tada:</h2>
+            <h2>Order Confirmed!</h2>
             <p>Thank you for your purchase. Your order has been placed successfully.</p>
             <p>We appreciate your business and hope to see you again soon.</p>
             <Link to="/" className="back-button" onClick={clearCart}>Back to Home</Link>
